@@ -2,15 +2,15 @@
 # Correc the mistakes and produce the following output:
 # Johnny, the total of your purchase is $1,688.70
 
-def calcTotal(amt,tax,name):
-    mytotal = amt * (1+tax)
-    print(f"{myname}, the total of your purchase is ${total:,.2f}")
+name = 'Johnny'
+price = 1560.00
+tax = 0.0825
 
-myname = 'Johnny'
-price = 1,560
-thetax = 8.25%
+def calcTotal(price,tax,name):
+    mytotal = price * (1 + tax)
+    print(f"{name}, the total of your purchase is ${mytotal:,.2f}")
 
-calcTotal(thetax,price,name)
+calcTotal(price,tax,name)
 
 
 
@@ -21,16 +21,17 @@ calcTotal(thetax,price,name)
 list1 = [1,'two',3.2,'four',5]
 
 for i in list1:
-    print(i)
+    if type(i) == int:
+        print(i)
 
 
 
 
-#### PROBLEM 3 ####
-# install the right library for the code below
-# to work properly. The output will be a map.
-# the filename is Baylor.html and it should
-# open up in your browser. The library is Plotly.
+# #### PROBLEM 3 ####
+# # install the right library for the code below
+# # to work properly. The output will be a map.
+# # the filename is Baylor.html and it should
+# # open up in your browser. The library is Plotly.
 
 from plotly.graph_objs import Scattergeo, Layout
 from plotly import offline
